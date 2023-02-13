@@ -30,7 +30,7 @@ func main() {
 		log.Printf("get %.0f blogs", total)
 		parseData(responseBody["data"].(map[string]interface{})["blogs"].([]interface{}))
 	} else {
-		log.Fatalf("httpGet Err %s", err)
+		log.Printf("httpGet Err %s", err)
 	}
 }
 
